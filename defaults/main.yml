@@ -1,4 +1,4 @@
-custodian_image: toolhippie/custodian:latest
+custodian_image: toolhippie/docker-custodian:latest
 custodian_interval: daily
 custodian_max_container_age: 3days
 custodian_max_image_age: 3days
