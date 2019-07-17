@@ -15,7 +15,6 @@ ExecStart=/usr/bin/docker run --rm \
   --name %p \
   --hostname %p \
   --label traefik.enable=false \
-  --env-file /etc/default/custodian \
   --volume /var/run/docker.sock:/var/run/docker.sock \
   {{ custodian_image }} \
 {% if custodian_dangling_volumes %}

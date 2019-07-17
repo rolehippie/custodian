@@ -1,12 +1,3 @@
-- name: write default
-  notify:
-    - restart custodian
-  template:
-    src: default.j2
-    dest: /etc/default/custodian
-  tags:
-    - custodian
-
 - name: prepare timer
   notify:
     - restart custodian
