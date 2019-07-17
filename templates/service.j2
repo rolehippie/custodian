@@ -1,0 +1,34 @@
+[Unit]
+Description=Custodian
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/environment
+
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker kill %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps -a | /bin/grep %p 1> /dev/null && /usr/bin/docker rm %p || true'
+ExecStartPre=/usr/bin/docker pull {{ custodian_image }}
+ExecStart=/usr/bin/docker run --rm \
+  --name %p \
+  --hostname %p \
+  --label traefik.enable=false \
+  --env-file /etc/default/custodian \
+  --volume /var/run/docker.sock:/var/run/docker.sock \
+  {{ custodian_image }} \
+{% if custodian_dangling_volumes %}
+  --dangling-volumes \
+{% endif %}
+{% for item in custodian_exclude_image %}
+  --exclude-image {{ item }} \
+{% endfor %}
+{% for item in custodian_exclude_container_label %}
+  ----exclude-container-label {{ item }} \
+{% endfor %}
+  --max-container-age {{ custodian_max_container_age }} \
+  --max-image-age {{ custodian_max_image_age }}
+
+[Install]
+WantedBy=multi-user.target

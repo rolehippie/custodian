@@ -1,0 +1,7 @@
+custodian_image: toolhippie/custodian:latest
+custodian_interval: daily
+custodian_max_container_age: 3days
+custodian_max_image_age: 3days
+custodian_dangling_volumes: False
+custodian_exclude_image: []
+custodian_exclude_container_label: []

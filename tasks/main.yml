@@ -1,0 +1,36 @@
+- name: write default
+  notify:
+    - restart custodian
+  template:
+    src: default.j2
+    dest: /etc/default/custodian
+  tags:
+    - custodian
+
+- name: prepare timer
+  notify:
+    - restart custodian
+  template:
+    src: timer.j2
+    dest: /etc/systemd/system/custodian.timer
+  tags:
+    - custodian
+
+- name: prepare service
+  notify:
+    - restart custodian
+  template:
+    src: service.j2
+    dest: /etc/systemd/system/custodian.service
+  tags:
+    - custodian
+
+- name: start service
+  systemd:
+    name: custodian.timer
+    state: started
+    daemon_reload: yes
+    masked: no
+    enabled: yes
+  tags:
+    - custodian
