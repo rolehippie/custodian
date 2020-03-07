@@ -1,7 +1,24 @@
+# Standards: 0.1
+---
+# @var custodian_image:description: Docker image to use
 custodian_image: toolhippie/docker-custodian:latest
+
+# @var custodian_interval:description: Interval for the systemd timer
 custodian_interval: daily
+
+# @var custodian_max_container_age:description: Max container age
 custodian_max_container_age: 3days
+
+# @var custodian_max_image_age:description: Max image age
 custodian_max_image_age: 3days
+
+# @var custodian_dangling_volumes:description: Remove dangling volumes
 custodian_dangling_volumes: False
+
+# @var custodian_exclude_image:description: List of images to exclude
 custodian_exclude_image: []
+
+# @var custodian_exclude_container_label:description: List of labels to exclude+
 custodian_exclude_container_label: []
+
+...
