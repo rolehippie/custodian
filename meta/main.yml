@@ -16,7 +16,7 @@ galaxy_info:
     - cleanup
     - gc
 
-dependencies:
-  - rolehippie.docker
+# rolehippie.docker
+dependencies: []
 
 ...
