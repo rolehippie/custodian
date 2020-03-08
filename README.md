@@ -94,7 +94,9 @@ custodian_max_image_age: 3days
 
 ## Dependencies
 
-- '[docker](https://github.com/rolehippie/docker)'
+- '['
+- '  "[docker](https://github.com/rolehippie/docker)"'
+- ']'
 
 ## License
 
