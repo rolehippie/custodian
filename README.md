@@ -1,8 +1,14 @@
 # custodian
 
-[![Build Status](https://cloud.drone.io/api/badges/rolehippie/custodian/status.svg)](https://cloud.drone.io/rolehippie/custodian)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/custodian) [![Build Status](https://img.shields.io/drone/build/rolehippie/custodian/master?logo=drone)](https://cloud.drone.io/rolehippie/custodian) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/custodian)](https://github.com/rolehippie/custodian/blob/master/LICENSE) 
 
-Ansible role to configure docker-custodian
+Ansible role to install and configure docker-custodian. 
+
+## Sponsor 
+
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+
+Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
@@ -94,7 +100,7 @@ custodian_max_image_age: 3days
 
 ## Dependencies
 
-* [docker](https://github.com/rolehippie/docker)
+* [rolehippie.docker](https://github.com/rolehippie/docker)
 
 ## License
 
