@@ -6,6 +6,9 @@
   template:
     src: timer.j2
     dest: /etc/systemd/system/custodian.timer
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - custodian
 
@@ -15,6 +18,9 @@
   template:
     src: service.j2
     dest: /etc/systemd/system/custodian.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - custodian
 
