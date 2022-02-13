@@ -25,7 +25,7 @@ ExecStart=/usr/bin/docker run --rm \
   --exclude-image {{ item }} \
 {% endfor %}
 {% for item in custodian_exclude_container_label %}
-  ----exclude-container-label {{ item }} \
+  --exclude-container-label {{ item }} \
 {% endfor %}
   --max-container-age {{ custodian_max_container_age }} \
   --max-image-age {{ custodian_max_image_age }}
