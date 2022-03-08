@@ -1,28 +1,29 @@
 # custodian
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/custodian) [![Testing Build](https://github.com/rolehippie/custodian/workflows/testing/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/custodian/workflows/readme/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/custodian/workflows/galaxy/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/custodian)](https://github.com/rolehippie/custodian/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/custodian) [![Testing Build](https://github.com/rolehippie/custodian/workflows/testing/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/custodian/workflows/readme/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/custodian/workflows/galaxy/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/custodian)](https://github.com/rolehippie/custodian/blob/master/LICENSE)
 
-Ansible role to install and configure docker-custodian. 
+Ansible role to install and configure docker-custodian.
 
-## Sponsor 
+## Sponsor
 
-[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
 
 Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
-* [Default Variables](#default-variables)
-  * [custodian_dangling_volumes](#custodian_dangling_volumes)
-  * [custodian_exclude_container_label](#custodian_exclude_container_label)
-  * [custodian_exclude_image](#custodian_exclude_image)
-  * [custodian_image](#custodian_image)
-  * [custodian_interval](#custodian_interval)
-  * [custodian_max_container_age](#custodian_max_container_age)
-  * [custodian_max_image_age](#custodian_max_image_age)
-* [Dependencies](#dependencies)
-* [License](#license)
-* [Author](#author)
+- [Default Variables](#default-variables)
+  - [custodian_dangling_volumes](#custodian_dangling_volumes)
+  - [custodian_exclude_container_label](#custodian_exclude_container_label)
+  - [custodian_exclude_image](#custodian_exclude_image)
+  - [custodian_image](#custodian_image)
+  - [custodian_interval](#custodian_interval)
+  - [custodian_max_container_age](#custodian_max_container_age)
+  - [custodian_max_image_age](#custodian_max_image_age)
+- [Discovered Tags](#discovered-tags)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Author](#author)
 
 ---
 
@@ -98,9 +99,14 @@ Max image age
 custodian_max_image_age: 3days
 ```
 
+## Discovered Tags
+
+**_custodian_**
+
+
 ## Dependencies
 
-* [rolehippie.docker](https://github.com/rolehippie/docker)
+- [rolehippie.docker](https://github.com/rolehippie/docker)
 
 ## License
 
