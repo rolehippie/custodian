@@ -3,7 +3,7 @@
 - name: Converge
   hosts: all
   roles:
-    - role: docker
-    - role: custodian
+    - role: rolehippie.docker
+    - role: rolehippie.custodian
 
 ...
