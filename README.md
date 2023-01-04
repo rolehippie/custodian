@@ -1,6 +1,6 @@
 # custodian
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/custodian) [![Testing Build](https://github.com/rolehippie/custodian/workflows/testing/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/custodian/workflows/readme/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/custodian/workflows/galaxy/badge.svg)](https://github.com/rolehippie/custodian/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/custodian)](https://github.com/rolehippie/custodian/blob/master/LICENSE)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/custodian) [![General Workflow](https://github.com/rolehippie/custodian/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/custodian/actions/workflows/general.yml) [![Readme Workflow](https://github.com/rolehippie/custodian/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/custodian/actions/workflows/readme.yml) [![Galaxy Workflow](https://github.com/rolehippie/custodian/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/custodian/actions/workflows/galaxy.yml) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/custodian)](https://github.com/rolehippie/custodian/blob/master/LICENSE)
 
 Ansible role to install and configure docker-custodian.
 
@@ -18,6 +18,8 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [custodian_interval](#custodian_interval)
   - [custodian_max_container_age](#custodian_max_container_age)
   - [custodian_max_image_age](#custodian_max_image_age)
+  - [custodian_pull_image](#custodian_pull_image)
+  - [custodian_version](#custodian_version)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -59,12 +61,12 @@ custodian_exclude_image: []
 
 ### custodian_image
 
-Docker image to use
+Docker image to use for deployment
 
 #### Default value
 
 ```YAML
-custodian_image: toolhippie/docker-custodian:latest
+custodian_image: toolhippie/docker-custodian:{{ custodian_version }}
 ```
 
 ### custodian_interval
@@ -95,6 +97,26 @@ Max image age
 
 ```YAML
 custodian_max_image_age: 3days
+```
+
+### custodian_pull_image
+
+Pull image as part of the tasks
+
+#### Default value
+
+```YAML
+custodian_pull_image: true
+```
+
+### custodian_version
+
+Version of docker custodian to use
+
+#### Default value
+
+```YAML
+custodian_version: 0.7.4
 ```
 
 ## Discovered Tags

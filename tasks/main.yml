@@ -24,6 +24,14 @@
   tags:
     - custodian
 
+- name: Pull docker image
+  when: custodian_pull_image
+  docker_image:
+    name: "{{ custodian_image }}"
+    source: pull
+  tags:
+    - custodian
+
 - name: Start custodian timer
   systemd:
     name: custodian.timer

@@ -1,7 +1,14 @@
 # Standards: 1.2
 ---
-# @var custodian_image:description: Docker image to use
-custodian_image: toolhippie/docker-custodian:latest
+# @var custodian_version:description: Version of docker custodian to use
+# renovate: datasource=docker depName=toolhippie/docker-custodian
+custodian_version: 0.7.4
+
+# @var custodian_image:description: Docker image to use for deployment
+custodian_image: "toolhippie/docker-custodian:{{ custodian_version }}"
+
+# @var custodian_pull_image:description: Pull image as part of the tasks
+custodian_pull_image: True
 
 # @var custodian_interval:description: Interval for the systemd timer
 custodian_interval: daily
