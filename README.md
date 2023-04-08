@@ -15,6 +15,7 @@ Building and improving this Ansible role have been sponsored by my current and p
 
 ## Table of content
 
+- [Requirements](#requirements)
 - [Default Variables](#default-variables)
   - [custodian_dangling_volumes](#custodian_dangling_volumes)
   - [custodian_exclude_container_label](#custodian_exclude_container_label)
@@ -31,6 +32,11 @@ Building and improving this Ansible role have been sponsored by my current and p
 - [Author](#author)
 
 ---
+
+## Requirements
+
+- Minimum Ansible version: `2.10`
+
 
 ## Default Variables
 
