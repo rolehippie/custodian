@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Write timer file
   notify:
     - Restart custodian
-  template:
+  ansible.builtin.template:
     src: timer.j2
     dest: /etc/systemd/system/custodian.timer
     owner: root
@@ -15,7 +14,7 @@
 - name: Write service file
   notify:
     - Restart custodian
-  template:
+  ansible.builtin.template:
     src: service.j2
     dest: /etc/systemd/system/custodian.service
     owner: root
@@ -26,14 +25,14 @@
 
 - name: Pull docker image
   when: custodian_pull_image
-  docker_image:
+  community.docker.docker_image:
     name: "{{ custodian_image }}"
     source: pull
   tags:
     - custodian
 
 - name: Start custodian timer
-  systemd:
+  ansible.builtin.systemd:
     name: custodian.timer
     state: started
     daemon_reload: True
