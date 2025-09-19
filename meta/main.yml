@@ -30,6 +30,7 @@ galaxy_info:
       versions:
         - focal
         - jammy
+        - noble
   galaxy_tags:
     - custodian
     - docker
@@ -37,5 +38,8 @@ galaxy_info:
     - gc
 
 dependencies: []
+
+collections:
+  - community.docker
 
 ...

@@ -24,7 +24,8 @@
     - custodian
 
 - name: Pull docker image
-  when: custodian_pull_image
+  when:
+    - custodian_pull_image
   community.docker.docker_image:
     name: "{{ custodian_image }}"
     source: pull
@@ -35,9 +36,9 @@
   ansible.builtin.systemd:
     name: custodian.timer
     state: started
-    daemon_reload: True
-    masked: False
-    enabled: True
+    daemon_reload: true
+    masked: false
+    enabled: true
   tags:
     - custodian
 

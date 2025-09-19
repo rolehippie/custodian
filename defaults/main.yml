@@ -7,7 +7,7 @@ custodian_version: 0.7.4
 custodian_image: "toolhippie/docker-custodian:{{ custodian_version }}"
 
 # @var custodian_pull_image:description: Pull image as part of the tasks
-custodian_pull_image: True
+custodian_pull_image: true
 
 # @var custodian_interval:description: Interval for the systemd timer
 custodian_interval: daily
@@ -19,7 +19,7 @@ custodian_max_container_age: 3days
 custodian_max_image_age: 3days
 
 # @var custodian_dangling_volumes:description: Remove dangling volumes
-custodian_dangling_volumes: False
+custodian_dangling_volumes: false
 
 # @var custodian_exclude_image:description: List of images to exclude
 custodian_exclude_image: []
