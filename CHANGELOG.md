@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.0](https://github.com/rolehippie/custodian/compare/v2.1.0...v3.0.0) (2025-11-24)
+
+
+### Features
+
+* **major:** update dependency community.docker to v5 ([#34](https://github.com/rolehippie/custodian/issues/34)) ([aa1450e](https://github.com/rolehippie/custodian/commit/aa1450ebfdb58028df2d1a0ea657f2df46944236))
+
 ## [2.1.0](https://github.com/rolehippie/custodian/compare/v2.0.0...v2.1.0) (2025-09-21)
 
 
