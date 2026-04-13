@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.2.0](https://github.com/rolehippie/custodian/compare/v3.1.0...v3.2.0) (2026-04-13)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.2.0,<5.3.0 ([#49](https://github.com/rolehippie/custodian/issues/49)) ([4b458c1](https://github.com/rolehippie/custodian/commit/4b458c12c21a3a2dfdfaa8fc3102d93d4a3200de))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([2b0d9ad](https://github.com/rolehippie/custodian/commit/2b0d9ad7a7ab39a9be41d6625bdafbb35d5c6d26))
+* **flake:** updated lockfile [skip ci] ([a2f1fad](https://github.com/rolehippie/custodian/commit/a2f1fadeab3ea5afa7c3df1b32f154a74be58905))
+
 ## [3.1.0](https://github.com/rolehippie/custodian/compare/v3.0.0...v3.1.0) (2026-03-30)
 
 ### Dependencies
