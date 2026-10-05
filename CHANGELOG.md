@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.7.0](https://github.com/rolehippie/custodian/compare/v3.6.0...v3.7.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.4.0,<5.5.0 ([#70](https://github.com/rolehippie/custodian/issues/70)) ([ed5fecf](https://github.com/rolehippie/custodian/commit/ed5fecfa240355994bf28916742222531c51d8bc))
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#63](https://github.com/rolehippie/custodian/issues/63)) ([5c2fabb](https://github.com/rolehippie/custodian/commit/5c2fabbc38b81cb832f1057e9afbc30c8c831d72))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#65](https://github.com/rolehippie/custodian/issues/65)) ([40c5c34](https://github.com/rolehippie/custodian/commit/40c5c341c001f6af7674800343e85672aef8745c))
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#66](https://github.com/rolehippie/custodian/issues/66)) ([4da6873](https://github.com/rolehippie/custodian/commit/4da68734c14b51c70c1ff16f717e076e5916601a))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#67](https://github.com/rolehippie/custodian/issues/67)) ([5dc4efa](https://github.com/rolehippie/custodian/commit/5dc4efaf6a98fb39cf6f69b5911190c5d84bd715))
+* **mise:** update dependency prek to v0.5.3 ([#64](https://github.com/rolehippie/custodian/issues/64)) ([c1fd570](https://github.com/rolehippie/custodian/commit/c1fd570fb8518b0af6431e93fb53b5630586d821))
+* **mise:** update dependency prek to v0.5.4 ([#68](https://github.com/rolehippie/custodian/issues/68)) ([7a6ff39](https://github.com/rolehippie/custodian/commit/7a6ff398344e32104fcc6c7704ef1d7337ac1f7b))
+* **mise:** update dependency prek to v0.5.5 ([#71](https://github.com/rolehippie/custodian/issues/71)) ([f6c6bdf](https://github.com/rolehippie/custodian/commit/f6c6bdf4741b9c3b8e962c6edfaead8b8b1dec72))
+
 ## [3.6.0](https://github.com/rolehippie/custodian/compare/v3.5.1...v3.6.0) (2026-09-07)
 
 ### Features
